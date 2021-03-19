@@ -1,32 +1,41 @@
 {
   "expo": {
-    "name": "nademi-tasklist-firebase",
-    "slug": "nademi-tasklist-firebase",
-    "version": "1.0.0",
+    "name": "nademi-tasklist",
+    "slug": "nademi-tasklist",
+    "version": "3.0.7",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
+    "userInterfaceStyle": "automatic",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "userInterfaceStyle": "light"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./app/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "userInterfaceStyle": "dark",
+      "package": "nademi.task.list",
+      "versionCode": 44
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./app/assets/favicon.png"
+    },
+    "description": "A simple App for storing Tasks",
+    "githubUrl": "https://github.com/nesho84/nademi-tasklist",
+    "androidNavigationBar": {
+      "barStyle": "light-content",
+      "backgroundColor": "#343a40"
     }
   }
 }
